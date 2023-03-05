@@ -1,0 +1,77 @@
+BODY {
+  0% {
+    background-image: url("https://aforismo.ru/wp-content/uploads/2019/11/5dd0b3e9c4d98.jpg");
+  }
+  100% {
+    background-image: url('C:\Users\user\Desktop\DI-Bootcamp-Stage1\final di\5dd0b3e9c4d98 (1)1');
+  }
+ 
+}
+
+@-webkit-keyframes changeBg
+{
+   0%   {background-image: url("https://aforismo.ru/wp-content/uploads/2019/11/5dd0b3e9c4d98.jpg")  background-repeat: no-repeat; background-attachment: fixed; background-size: cover;}
+   100%  {background-image: url('https://i.ibb.co/ZWmFJsj/5dd0b3e9c4d98-1-1.jpg')  background-repeat: no-repeat; background-attachment: fixed; background-size: cover;}
+
+}
+ body
+{
+   -webkit-animation: changeBg 10s ;
+}
+
+}
+div {
+  float: left;
+  width: 200px;
+  height: 200px;
+  -webkit-animation-name: test;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+}
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+    
+  .text {
+  width: 29ch;
+  color: BLACK;
+  font-family: monospace;
+  font-size: 30px;
+  white-space: nowrap; /* не переносить текст на другую строку */
+  overflow: hidden; /* скрываем переполнение контентом */
+  border-right: 3px solid white; /* рисуем курсор */
+  animation: cursor 0.75s step-end infinite, printed_text 5s steps(29);
+}
+
+@keyframes cursor {
+  0% {
+    border-color: white;
+  }
+
+  50% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: white;
+  }
+}
+
+@keyframes printed_text {
+  from {
+    width: 0;
+  }
+}

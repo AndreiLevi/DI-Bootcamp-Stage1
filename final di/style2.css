@@ -1,0 +1,124 @@
+	
+@-webkit-keyframes changeBg {
+  0% {
+    background-image: url("https://i.ibb.co/qdZ6hBv/5dd0b3e9c4d98-2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: percentage;
+    background-position: center center;
+  }
+  15% {
+    background-image: url("https://i.ibb.co/ZWmFJsj/5dd0b3e9c4d98-1-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: percentage;
+   background-position: center center;
+
+  }
+  50% {
+    background-image: url("https://i.ibb.co/qdZ6hBv/5dd0b3e9c4d98-2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: percentage;
+    background-position: center center;
+  }
+  100% {
+    background-image: url("https://i.ibb.co/ZWmFJsj/5dd0b3e9c4d98-1-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: percentage;
+    background-position: center center;
+  }
+}
+
+body {
+  -webkit-animation: changeBg 50s;
+  
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+    text-transform: uppercase;
+	  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 10;
+  margin-right: 0;
+.one
+{ 
+    float: left;
+text-align: left
+    border-color: red; 
+   
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+    
+  .text {
+  width: 52ch;
+  color: BLACK;
+  font-family: monospace;
+  font-size: 30px;
+  white-space: nowrap; /* не переносить текст на другую строку */
+  overflow: hidden; /* скрываем переполнение контентом */
+  border-right: 3px solid white; /* рисуем курсор */
+  animation: cursor 0.75s step-end infinite, printed_text 10s steps(57);
+}
+
+@keyframes cursor {
+  0% {
+    border-color: black;
+  }
+
+  50% {
+    border-color: black;
+  }
+
+  100% {
+    border-color: black;
+  }
+}
+
+@keyframes printed_text {
+  from {
+    width: 0;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    div {
+        width : 30%;
+        display: inline-block;
+        background-color: aqua;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    div {
+        width : 45%;
+        display: inline-block;
+        background-color: pink;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    div {
+        width : 75%;
+        display: inline-block;
+        background-color: lightgreen;
+    }
+}
+
+@media all and (max-width: 480px) { 
+    div {
+        width : 100%;
+        background-color: yellow;
+    }
+}

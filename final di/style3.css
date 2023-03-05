@@ -1,0 +1,204 @@
+@import url('https://fonts.google.com/specimen/Clicker+Script:wght@300;400;700&display=swap');
+@import url('https://fonts.google.com/specimen/Shojumaru');
+@-webkit-keyframes changeBg {
+  0% {
+    background-image: url("https://i.ibb.co/qdZ6hBv/5dd0b3e9c4d98-2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: percentage;
+    background-position: center center;
+  }
+ h2
+ { font-family:Shojumaru;
+ }
+  25% {
+    background-image: url("https://i.ibb.co/ZWmFJsj/5dd0b3e9c4d98-1-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: percentage;
+   background-position: center center;
+       background-size: contain;
+
+  }
+  50% {
+    background-image: url("https://i.ibb.co/qdZ6hBv/5dd0b3e9c4d98-2.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: percentage;
+    background-position: center center;
+  }
+  100% {
+    background-image: url("https://i.ibb.co/ZWmFJsj/5dd0b3e9c4d98-1-1.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 10%;
+    background-position: center center;
+  }
+
+}
+
+body {
+	    background-image: url("https://i.ibb.co/ZWmFJsj/5dd0b3e9c4d98-1-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+  background-position: center center;
+  -webkit-animation: changeBg 10s;
+}
+
+
+
+
+.text {
+  width: 52ch;
+  color: BLACK;
+  font-family: monospace;
+  font-size: 20px;
+  white-space: pre; /* не переносить текст на другую строку */
+  overflow: hidden; /* скрываем переполнение контентом */
+  border-right: 0.1px solid white; /* рисуем курсор */
+  animation: cursor 0.75s step-end infinite, printed_text 10s steps(23);
+}
+.text1 {
+  width: 200ch;
+  color: BLACK;
+  font-family: verdana;
+  font-size: 15px;
+ position:left;
+	 float: left;
+ 
+}
+p {
+  font-family: Clicker Script;
+  font-size: 11px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 10;
+  margin-right: 0;
+  text-align: left;
+  border-color: red; 
+}
+
+a {
+font-family: verdana;
+  font-size: 14px;
+
+.container {
+display: block;
+ height: 500px;
+  width: 300px;
+ margin-top: 0em;
+  margin-bottom: 10em;
+  margin-left: 10;
+  margin-right: 10;
+  text-align:left;
+   padding: 30px;
+     flex-direction: column;
+	 position:absolute;
+	 float: left;
+}
+.container2 {
+display: block;
+ height: 500px;
+  width: 300px;
+ margin-top: 0em;
+  margin-bottom: 10em;
+  margin-left: 10;
+  margin-right: 10;
+  text-align:left;
+   padding: 30px;
+     flex-direction: column;
+	 position:absolute;
+float: right;
+}
+
+img {
+  opacity: 0.1;
+}
+
+img:hover {
+  opacity: 0.4;
+}
+.one {
+  float: left;
+  text-align: left;
+  border-color: red; 
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.wrapper1 {
+  display: block;
+ height: 500px;
+  width: 300px;
+ margin-top: 0em;
+  margin-bottom: 10em;
+  margin-left: 10;
+  margin-right: 10;
+  text-align:left;
+   padding: 30px;
+     flex-direction: column;
+	 position:relative;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+.nav-link {
+   display: flex;
+   align-items: center;
+   padding: 12px 25px;
+ }
+
+.nav-link span {
+   margin-left: 15px;
+ }
+ .nav-link2 span {
+   margin-right: 15px;
+ }
+
+
+ }
+
+.active {
+   background: #e5e5e5;
+}s
+@keyframes cursor {
+  0% {
+    border-color: black;
+  }
+
+  50% {
+    border-color: black;
+  }
+
+  100% {
+    border-color: black;
+  }
+}
+
+@keyframes printed_text {
+  from {
+    width: 0;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  div {
+    width : 30%;
+    display: inline-block;
+    background-color: aqua;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+  div {
+    width :
